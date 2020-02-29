@@ -1,0 +1,17 @@
+[package]
+name = "neon-worker-thread"
+version = "0.1.0"
+authors = ["강동윤 <kdy1997.dev@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "neon_worker_thread"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.3"
+
+[dependencies]
+neon = "0.3.3"
